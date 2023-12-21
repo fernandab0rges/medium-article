@@ -1,0 +1,80 @@
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: lighter;
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.banner {
+  background-image: url(https://source.unsplash.com/random/1000x500);
+  background-size: cover;
+  color: white;
+  padding: 120px 0;
+}
+
+.banner h1 {
+  font-size: 38px;
+  font-weight: bold !important;
+}
+
+.banner p {
+  font-family: 'Lora', serif;
+  font-size: 25px;
+}
+
+.container {
+  width: 700px;
+  margin: 50px auto;
+}
+
+a.link-medium {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(233, 253, 240, 1), rgba(233, 253, 240, 1));
+  color: #636363;
+  font-weight: lighter;
+  font-size: 25px;
+  font-style: italic;
+}
+
+a.link-medium:hover {
+  background-image: linear-gradient(to bottom, rgb(128, 243, 168), rgb(103, 246, 153));
+}
+
+
+/* Media queries */
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 700px;
+  }
+}
+
+/* For larger screens, default to the original width */
+@media (min-width: 1200px) {
+  .container {
+    width: 700px;
+  }
+}
